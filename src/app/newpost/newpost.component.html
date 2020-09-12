@@ -1,1 +1,26 @@
 <p>newpost works!</p>
+
+<div>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>Key</mat-label>
+      <input matInput formControlName="id">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Summary</mat-label>
+        <input matInput formControlName="summary">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Content</mat-label>
+      <textarea matInput formControlName="detail"></textarea>
+    </mat-form-field>
+   <button mat-raised-button color="primary">Submit</button>
+  </form>
+  </div>

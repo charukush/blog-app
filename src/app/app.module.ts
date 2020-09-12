@@ -8,7 +8,11 @@ import { MatToolbarModule, MatToolbar } from '@angular/material/toolbar';
 import { HomeComponent } from './home/home.component';
 import { MyaccountComponent } from './myaccount/myaccount.component';
 import { NewpostComponent } from './newpost/newpost.component';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule, MatButton } from '@angular/material/button';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +24,13 @@ import { NewpostComponent } from './newpost/newpost.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    HttpClientModule,
+    ReactiveFormsModule
+    
    
   ],
   providers: [],
