@@ -19,7 +19,7 @@ export class NewpostComponent implements OnInit {
   ngOnInit(): void {
   }
   openSnackBar(){
-    this.snackBar.open('Post Ssuccess','End now',{
+    this.snackBar.open('Post Success','End now',{
       duration:5000
     })
   }

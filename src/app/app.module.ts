@@ -14,6 +14,8 @@ import { MatButtonModule, MatButton } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule} from '@angular/forms';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatCardModule} from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { MatSnackBarModule} from '@angular/material/snack-bar';
     MatButtonModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatCardModule
     
    
   ],

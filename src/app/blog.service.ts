@@ -15,8 +15,8 @@ export class BlogService {
   // async getById(id: string):Promise<Post>{
 
   // }
-  // async getAll(): Promise<Post[]>{
-
-  // }
+   async getAll(): Promise<Post[]>{
+     return this.http.request<Post[]>('GET',"http://localhost:3000/dev/content").toPromise();
+   }
   
 }
