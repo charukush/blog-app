@@ -15,13 +15,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule} from '@angular/forms';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatCardModule} from '@angular/material/card';
+import { PostdetailComponent } from './postdetail/postdetail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MyaccountComponent,
-    NewpostComponent
+    NewpostComponent,
+    PostdetailComponent
   ],
   imports: [
     BrowserModule,

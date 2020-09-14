@@ -12,9 +12,10 @@ export class BlogService {
   async create(blog){
    return this.http.put("http://localhost:3000/dev/content",blog).toPromise();
   }
-  // async getById(id: string):Promise<Post>{
+   async getById(id: string):Promise<Post>{
+     return this.http.request<Post>('GET',`http://localhost:3000/dev/content/${id}`).toPromise();
 
-  // }
+   }
    async getAll(): Promise<Post[]>{
      return this.http.request<Post[]>('GET',"http://localhost:3000/dev/content").toPromise();
    }
