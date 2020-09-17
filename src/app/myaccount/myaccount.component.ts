@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BlogService } from '../blog.service';
+import { Post} from '../model/post';
 
 @Component({
   selector: 'app-myaccount',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyaccountComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: BlogService) { }
+  public bloglist: Post[] = [];
+  
 
-  ngOnInit(): void {
+ 
+  async ngOnInit(){
+   this.bloglist = await this.service.getAll();
+   
   }
 
 }
