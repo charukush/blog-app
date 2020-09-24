@@ -19,5 +19,8 @@ export class BlogService {
    async getAll(): Promise<Post[]>{
      return this.http.request<Post[]>('GET',"http://localhost:3000/dev/content").toPromise();
    }
+   async delete(id: string){
+     return this.http.request('DELETE',`http://localhost:3000/dev/content/${id}`).toPromise();
+   } 
   
 }

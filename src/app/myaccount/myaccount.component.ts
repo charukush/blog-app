@@ -19,4 +19,9 @@ export class MyaccountComponent implements OnInit {
    
   }
 
+  async onDelete(id: string){
+    console.log(`Delete ${id}`);
+    await this.service.delete(id);
+ }
+
 }

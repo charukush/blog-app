@@ -1,6 +1,9 @@
 <h1>My Account</h1>
 <a routerLink = "/newpost">New Post</a>
 <ul *ngFor = "let row of bloglist">
-    {{row.title}}
+    {{row.title}} -     
+    <mat-card-actions>
+        <a mat-button (click) = "onDelete(row.id)">Delete</a>
+      </mat-card-actions>
 
 </ul>
